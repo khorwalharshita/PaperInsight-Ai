@@ -26,6 +26,7 @@ dist-ssr
 .env
 .env.*
 !.env.example
+<<<<<<< HEAD
 
 
 # Python
@@ -43,3 +44,5 @@ public/public/
 
 src/src/
 public/public/
+=======
+>>>>>>> origin/mansi-search-ai
