@@ -1,0 +1,186 @@
+/* ============================= */
+/* RESEARCH PAPER SEARCH */
+/* ============================= */
+
+.upload-page {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 70px 25px;
+  text-align: center;
+}
+
+.upload-page > p {
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+/* Sections */
+
+.feature-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 40px;
+  margin: 25px 0;
+
+  box-shadow: var(--shadow);
+}
+
+.feature-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Divider */
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 35px 0;
+  color: var(--text-light);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-divider span {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+/* Topic search */
+
+.topic-search {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.topic-search input {
+  flex: 1;
+
+  padding: 15px 17px;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  background: white;
+  color: var(--text);
+
+  font-family: var(--sans);
+  font-size: 15px;
+
+  outline: none;
+}
+
+.topic-search input::placeholder {
+  color: var(--text-light);
+}
+
+.topic-search input:focus {
+  border-color: var(--primary);
+
+  box-shadow:
+    0 0 0 4px var(--primary-soft);
+}
+
+.topic-search button {
+  white-space: nowrap;
+}
+
+/* Results */
+
+.research-results {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.research-results > h2 {
+  text-align: center;
+}
+
+.results-topic {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Paper cards */
+
+.paper-card {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 17px;
+
+  padding: 25px;
+  margin: 18px 0;
+
+  box-shadow: var(--shadow);
+
+  transition: 0.2s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-3px);
+  border-color: #d5c8ff;
+}
+
+.paper-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--heading);
+}
+
+.paper-meta {
+  color: var(--primary-dark);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.paper-card p {
+  margin-bottom: 15px;
+}
+
+.view-paper {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+
+  box-shadow: none;
+}
+
+.view-paper:hover {
+  background: #e4dcff;
+  color: var(--primary-dark);
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .upload-page {
+    padding: 45px 18px;
+  }
+
+  .feature-section {
+    padding: 25px 18px;
+  }
+
+  .topic-search {
+    flex-direction: column;
+  }
+
+  .topic-search button {
+    width: 100%;
+  }
+
+}
